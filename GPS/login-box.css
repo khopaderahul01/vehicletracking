@@ -1,0 +1,76 @@
+
+#login-box {
+	width:400px;
+	height:340px;
+	margin:0 auto;
+	/*padding: 58px 76px 0 76px;*/
+	color: #ebebeb;
+	font:12px Arial, Helvetica, sans-serif;
+	background: url(images/login-box-backg.png) no-repeat left top;
+}
+
+#login-box img {
+	border:none;
+}
+
+#login-box h2 {
+	padding:0;
+	margin:0;
+	color:#ebebeb;
+	font:bold 44px "Calibri", Arial;
+}
+
+
+#login-box-name {
+	float:left;
+	width:80px;
+	text-align:left;
+	padding:8px 10px 0 0;
+	margin:0 0 7px 0;
+	
+	font-family:Arial;
+	font-size:14px;
+	color:#FF5757;
+}
+
+#login-box-field {
+	float: left;
+	display:inline;
+	width:230px;
+	margin:0;
+	margin:0 0 25px 0;
+}
+
+
+.form-login  {
+	width: 205px;
+/*	padding: 10px 4px 6px 3px;
+	border: 1px solid #0d2c52;
+	background-color:#1e4f8a;
+	font-size: 16px;
+	color: #ebebeb;*/
+    border:1px solid #656565;
+    box-shadow:0 0 5px #8F8F8F;
+	border-radius:6px;
+	padding:8px;
+}
+
+
+.login-box-options  {
+	clear:both;
+	padding-left:87px;
+	font-size: 11px;
+}
+
+.login-box-options a {
+	color: #ebebeb;
+	font-size: 11px;
+}
+
+/********** CSS **********/
+body{background:url(images/body.png) repeat top left;}
+#login-box{background:/*url(images/loginBoxBg.png) repeat left top */#ced7dc; border-radius:7px; padding:2px;}
+#contentdata_lblhead{display:block; font-size:0; padding:18px 0; text-align:center; background:#FF5757; border-radius:5px 5px 0 0;}
+.loginBoxFieldsMain{margin:35px auto 0; width:320px;}
+#contentdata_btnLogin{margin-left:90px;}
+#contentdata_lblmsg{float:left; padding-left:90px; color:#E70606; font-weight:bold; margin-top:-25px;}

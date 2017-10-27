@@ -1,0 +1,91 @@
+﻿*{margin:0; padding:0;}
+
+body, html{height:100%; width:100%;}
+
+body{margin:0; padding:0; font-size:12px; font-family:Arial, "Segoe UI", sans-serif; position:relative;}
+
+/****************** Float CSS ******************/
+.flt_L{float:left;}
+.flt_R{float:right;}
+
+/****************** Clear CSS ******************/
+.clrLt{clear:left;}
+.clrRt{clear:right;}
+.clrBt{clear:both;}
+
+#pageWrapper{height:100%; width:100%; margin-top:28px;}
+
+/****************** Header CSS ******************/
+#Header{background:#2D2D2D; position:fixed; top:0; left:0; z-index:5; padding:3px 0;}
+#Header div ul{background:none;}
+#Header div ul li a, #Header div ul li a span{color:#BBBBBB;}
+#Header div ul li a:hover, #Header div ul li a span:hover{color:#fff; background:none;}
+#Header div ul li div ul li, #Header div ul li div ul li:hover{background:none; border:none;}
+#Header div ul li div.rmSlide ul{background:#ffffff; box-shadow:0 0 3px #000000;}
+#Header div ul li div.rmSlide ul li a, #Header div ul li div.rmSlide ul li a span{color:#000;}
+#Header div ul li div.rmSlide ul li a:hover{background:#f5f5f5;}
+
+
+/****************** Latest Menu CSS ******************/
+.nav{background:#155785; height:30px; position:fixed; top:0; width:100%; z-index:555;}
+#menu{float:left;}
+#menu li{float:left; list-style:none;}
+#menu li a{display:block; text-decoration:none; color:#fff; font:bold 13px/28px Arial,sans-serif; padding:0 10px; margin:0 3px;}
+#menu li a:hover, #menu li .highlight{/*background:#96bf3f;*/ background:#3A8CC6; border-radius:3px;}
+#menu li ul{display:none;}
+#menu li{position:relative;}
+#menu li ul li{float:none; text-align:left; clear:both; list-style:none;}
+#menu li ul li a{text-align:left; font-weight:normal;}
+#menu li:hover ul{display:block; overflow:hidden; z-index:5; margin:0; padding:0 0 3px; left:2px; width:150px; background:#155785; position:absolute; text-align:left;}
+.RadDockZone input{background:#717171; border: medium none; border-radius:5px 5px 0 0; color:#FFFFFF; font-family:Arial; font-size:12px; padding:2px 8px;}
+
+.RadButton_Default.rbSkinnedButton, .RadButton_Default .rbDecorated, .RadButton_Default.rbVerticalButton, 
+.RadButton_Default.rbVerticalButton .rbDecorated, .RadButton_Default .rbSplitRight, .RadButton_Default .rbSplitLeft{background-image:none !important; color:#fff !important;}
+
+.RadButton_Transparent.rbSkinnedButton, .RadButton_Transparent .rbDecorated, .RadButton_Transparent.rbVerticalButton, 
+.RadButton_Transparent.rbVerticalButton .rbDecorated, .RadButton_Transparent .rbSplitRight, 
+.RadButton_Transparent .rbSplitLeft{background-image:none !important; color:#fff !important;}
+
+.RadDockZone input{background:#717171; border: medium none; border-radius:5px; color:#FFFFFF; cursor:pointer; font-family:Arial; font-size:12px; padding:3px 8px;}
+.RadDockZone input:hover{background:#A6A6A6;}
+
+#ctl00_contentdata_btnReplay #ctl00_contentdata_btnReplay_input{background-color:#717171; border-radius:5px; cursor:pointer; padding:0 8px;}
+#ctl00_contentdata_btnReplay #ctl00_contentdata_btnReplay_input:hover{background:#A6A6A6;}
+
+#contentdata_updatePanelControlPanel #btnSuspend, 
+#contentdata_updatePanelControlPanel #btnPlay, 
+#contentdata_updatePanelControlPanel #btnStop, 
+#contentdata_updatePanelControlPanel #btnExport{background-color:#717171; color:#fff; font-family:Arial; 
+font-size:12px; border-radius:5px; border:none; cursor:pointer; padding:3px 5px; margin-right:3px;}
+#contentdata_updatePanelControlPanel #btnExport{margin-right:0;}
+
+#contentdata_updatePanelControlPanel #btnSuspend:hover, 
+#contentdata_updatePanelControlPanel #btnPlay:hover, 
+#contentdata_updatePanelControlPanel #btnStop:hover, 
+#contentdata_updatePanelControlPanel #btnExport:hover{background:#A6A6A6;}
+
+.h1Titles{color:#444444; float:left; font-family:Arial; font-size:20px; padding:15px 0 0;}
+
+/****************** Admin Login CSS ******************/
+/*#Header .adminLogin{padding-right:10px; padding-top:5px;}
+#Header .adminLogin, #Header .adminLogin a{color:rgb(252, 141, 126); text-decoration:none;}
+#Header .adminLogin a:hover{color:#fff;}
+
+.nav .adminLogin{padding:8px 0 0; float:right; color:#fff; text-shadow:0 0 3px infobackground; text-transform:capitalize;}
+.nav .adminLogin span, .nav .adminLogin a{font-size:13px; color:#fff; font-family:Arial; text-decoration:none;}
+.nav .adminLogin a:hover{color:#9ec93f;}*/
+
+.nav .adminLogin{padding:0 10px 0; float:right; color:#fff; text-shadow:0 0 3px infobackground; text-transform:capitalize;}
+.nav .adminLogin span, .nav .adminLogin a{color:#fff; font:bold 13px/28px Arial,sans-serif; text-decoration:none;}
+.nav .adminLogin a:hover{color:#A3BFCC;}
+
+/****************** Content CSS ******************/
+#Content{clear:both;}
+
+/****************** Footer CSS ******************/
+.footerMain{background:#155785; bottom:0; color:#FFFFFF; font-family:Arial; font-size:12px; padding:6px 10px; position:fixed; width:98.5%; z-index:99999;}
+.copyRightCss{float:left;}
+.termConditioMain{float:right;}
+.termConditioMain span, .termConditioMain a{float:left; color:#FFFFFF; text-decoration:none;}
+.termConditioMain a:hover{color:#A3BFCC;}
+.termConditioMain span{padding:0 5px;}

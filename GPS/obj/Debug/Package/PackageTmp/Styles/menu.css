@@ -1,0 +1,350 @@
+/**
+ *********************************************
+ * Prototype of styles for horizontal CSS-menu
+ * @data 25.01.2010
+ *********************************************
+ * (X)HTML-scheme:
+ *  <div id="menu">
+ *      <ul class="menu">
+ *          <li><a href="#" class="parent"><span>level 1</span></a>
+ *              <div><ul>
+ *                  <li><a href="#" class="parent"><span>level 2</span></a>
+ *                      <div><ul><li><a href="#"><span>level 3</span></a></li></ul></div>
+ *                  </li>
+ *              </ul></div>
+ *          </li>
+ *          <li class="last"><a href="#"><span>level 1</span></a></li>
+ *      </ul>
+ *  </div>
+ *********************************************
+ */
+/** Selectors **/
+
+/* Reset */
+#menu * 
+{
+    
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;text-transform:uppercase;
+  z-index:999;
+  float:left;
+
+  
+}
+div#menu {
+position:relative;  z-index:999;}
+
+#menu ul.menu 
+{
+    
+   background-image: url("images/m2.jpg");
+    background-position: left top;
+    background-repeat: repeat-x;
+    width: 710px;
+}
+
+
+
+/* Geometrical arrangement */
+#menu ul.menu li 
+{
+    
+  display: inline-block;
+  height: 37px;
+  position: relative;text-transform:uppercase;
+}
+
+#menu ul.menu li div {
+  position: absolute;
+  top: 37px;
+  left: 0px;text-transform:uppercase;
+}
+
+#menu ul.menu li div div {
+  position: absolute;
+  top: -6px;
+  left: 188px;text-transform:uppercase;
+}
+
+/* Escaping style for lower levels */
+#menu ul.menu li div ul li {
+  display: block;
+  float: none;
+  width: auto;
+  height: auto;text-transform:uppercase;
+}
+
+/** Graphics **/
+
+.nobg {
+  background: transparent;
+  display: inline-block;text-transform:uppercase;
+}
+
+/* Horizontal sliding doors */
+#menu ul.menu li a {
+  padding-left: 14px;
+  background-image: url("../images/item1.png");
+  background-repeat: no-repeat;
+  background-position: left -1000px;
+  display: inline-block;
+  margin: 0px 2px;text-transform:uppercase;
+}
+
+#menu ul.menu li a span {
+  padding-right: 12px;
+  padding-left: 0px;
+  background-image: url("../images/item1.png");
+  background-repeat: no-repeat;
+  background-position: right -1000px;
+  display: inline-block;
+  height:37px;
+  line-height: 44px;
+  cursor: pointer;text-transform:uppercase;
+}
+
+
+#menu ul.menu li:hover a 
+{
+    background-color:#2F95D7;
+    
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: White;
+    cursor: pointer;
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    overflow: hidden;
+    padding: 0 15px;
+    text-align: center;
+    text-decoration: none;
+       /* background-position: left -88px;text-transform:uppercase;*/
+}
+
+#menu ul.menu li:hover a span 
+{
+    background-color:#2F95D7;
+   
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: White;
+    cursor: pointer;
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    overflow: hidden;
+    padding: 0 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#menu ul.menu li.active a {
+  background-color :#2F95D7;
+  
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: White;
+    cursor: pointer;
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    overflow: hidden;
+    padding: 0 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#menu ul.menu li.active a span {
+		color: #2F95D7;text-transform:uppercase;
+  background-position: right -44px;
+}
+
+/* Escape Horizontal doors */
+#menu ul.menu li div ul li a {
+  display: block;
+  padding: 0px;
+  margin: 0px; font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: none;text-transform:uppercase;
+}
+
+#menu ul.menu li div ul li a span {
+  display: block;
+  padding: 0px;
+  background: none;
+  height: auto;
+  width: 165px;
+  line-height: 34px; font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 7px 0 7px 9px;
+  white-space: normal;  text-transform:uppercase;
+}
+
+/* Vertical sliding doors */
+#menu ul.menu li div { 
+  width: 200px;
+  padding-top: 6px;
+  background-image: url("../images/submenu-top.png");
+  background-repeat: no-repeat;
+  background-position: 0px top;text-transform:uppercase;
+}
+
+#menu ul.menu li div ul { 
+  padding: 6px 6px 9px 6px;
+  padding-top: 0;
+  background-image: url("../images/submenu-bottom.png");
+  background-repeat: no-repeat;
+  background-position: 0px bottom;text-transform:uppercase;
+}
+
+/* Hover Effect on Submenus */
+#menu ul.menu ul li:hover
+{
+
+}
+#menu ul.menu li.active ul li a span {
+	color: #434343;
+	width: 165px;text-transform:uppercase;}
+#menu ul.menu li.active ul li a span:hover {
+	color:#dd9726;text-transform:uppercase;}
+	
+#menu ul.menu ul li a span:hover
+{
+	color:#dd9726; text-transform:uppercase;
+}
+
+
+/* Main header line */
+#menu {
+  height: 37px;
+background-image: url("../images/navbg.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+/* Text shadow */
+#menu span
+{
+  color: #ffffff;text-transform:uppercase;
+ 
+}
+
+#menu li:hover>a>span 
+{
+  color: #232323;text-transform:uppercase;
+}
+
+ .mlCorner {
+    background-image: url("images/m1.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    width: 6px;
+}
+
+/* Fonts */
+#menu ul.menu li a span
+{ 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;text-transform:uppercase;
+}
+
+#menu ul.menu li div ul li a span
+{ color:#5E5E5E;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;text-transform:uppercase;line-height:18px;
+}
+
+/* Lines between li */
+#menu ul.menu li div ul
+{
+  padding-bottom: 8px;
+}
+
+#menu ul.menu li div ul li:first-child
+{
+  border-top-width: 0px;
+}
+
+
+/* Menu logic */
+#menu li>div { visibility: hidden; }
+#menu li:hover>div { visibility: visible; }
+/* */
+
+/* Hover Effect on Submenus */
+#menu ul.menu ul li:hover
+{
+  background-color: #fff;
+}
+
+/* Lines between li */
+#menu ul.menu li div ul li
+{
+  background-image:url(../images/hr.gif);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+#menu ul.menu ul a.parent {
+  background: url(../images/arrow.gif) no-repeat right center;
+  margin-right: -1px;
+}
+
+
+/* ie7 */
+#menu ul.menu li {
+  *zoom: 1;
+  *display: inline;
+}
+
+#menu ul.menu li a {
+  *zoom: 1;
+  *display: inline;
+}
+
+#menu ul.menu li a span {
+  *zoom: 1;
+  *display: inline;
+}
+
+/* IE6 */
+#menu ul.menu li a {
+  _background-image: url("../images/item.gif");
+}
+
+#menu ul.menu li a span {
+  _background-image: url("images/item.gif");
+}
+
+#menu ul.menu li div { 
+  _background-image: url("../images/submenu-top.gif");
+}
+
+#menu ul.menu li div ul { 
+  _background-image: url("../images/submenu-bottom.gif");
+}
+
+#menu ul.menu li a:hover {
+  _background-position: left -54px;
+}
+
+#menu ul.menu li a:hover span {
+  _background-position: right -81px;
+  _color: #FFFFFF;
+}
+#menu ul.menu li li a:hover span {
+  _color:#dd9726; 
+}
+
+/* Menu logic for IE6 */
+#menu div { _display: none; }
+#menu div li:hover div { _visibility: visible;_display: block; }
+#menu div li:hover li:hover div { _display: block; }
+#menu div li:hover li:hover li:hover div { _display: block; }
+/* */

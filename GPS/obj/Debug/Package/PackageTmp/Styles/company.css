@@ -1,0 +1,39 @@
+﻿body
+{
+}
+
+.editImg
+{
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+}
+
+.deleteImg
+{
+    width: 20px;
+    height: 20px;
+    margin-top: -15px;
+}
+
+
+
+.button
+{
+    background-color: gray;
+    border: 1px solid;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 3px 10px;
+    vertical-align: middle;
+    color: White;
+}
+
+.button:hover
+{
+    background-color: #E1E1E1;
+    color: gray;
+}
+

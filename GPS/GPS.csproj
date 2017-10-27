@@ -1,0 +1,796 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92F1804A-DC73-4A01-916E-F93538D13A20}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GPS</RootNamespace>
+    <AssemblyName>GPS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabases>true</PublishDatabases>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="NewConnection1-Deployment" Order="1">
+          <Destination Path="" />
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax">
+      <HintPath>..\..\..\GPS\GPSTracking\Bin\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\GPS\GPSTracking\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Artem.Google">
+      <HintPath>..\..\..\GPS\GPSTracking\Bin\Artem.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="dotnetCHARTING">
+      <HintPath>..\..\..\GPS\GPSTracking\Bin\dotnetCHARTING.dll</HintPath>
+    </Reference>
+    <Reference Include="GPSTrackingBLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\GPSTrackingBLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\GPS\GPSTracking\Bin\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\GPS\GPSTracking\Bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpKml, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\GPS\GPSTracking\Bin\SharpKml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="system.commonlibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\GPS\GPSTracking\Bin\system.commonlibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\..\GPS\GPSTracking\Bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\..\..\GPS\GPSTracking\Bin\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API.asmx" />
+    <Content Include="bin\Ajax.dll" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\Artem.Google.dll" />
+    <Content Include="bin\dotnetCHARTING.dll" />
+    <Content Include="bin\ExcelLibrary.dll" />
+    <Content Include="bin\GPS.dll" />
+    <Content Include="bin\GPS.pdb" />
+    <Content Include="bin\GPSTracking.dll" />
+    <Content Include="bin\GPSTracking.pdb" />
+    <Content Include="bin\GPSTrackingBLL.dll" />
+    <Content Include="bin\GPSTrackingBLL.pdb" />
+    <Content Include="bin\Ionic.Zip.Reduced.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\SharpKml.dll" />
+    <Content Include="bin\System.CommonLibrary.dll" />
+    <Content Include="bin\Telerik.Web.UI.dll" />
+    <Content Include="bin\Telerik.Web.UI.Skins.dll" />
+    <Content Include="Carriers.aspx" />
+    <Content Include="Company.aspx" />
+    <Content Include="Comparison.aspx" />
+    <Content Include="DashBoard.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ExportExcel.aspx" />
+    <Content Include="ExportPdf.aspx" />
+    <Content Include="ExportToExcelMultiple.aspx" />
+    <Content Include="ExportToPDFMultiple.aspx" />
+    <Content Include="GDashboard.aspx" />
+    <Content Include="Geofencing.aspx" />
+    <Content Include="icons\1.png" />
+    <Content Include="icons\1\green\car0.png" />
+    <Content Include="icons\1\green\car0_45.png" />
+    <Content Include="icons\1\green\car135.png" />
+    <Content Include="icons\1\green\car135_180.png" />
+    <Content Include="icons\1\green\car180.png" />
+    <Content Include="icons\1\green\car180_225.png" />
+    <Content Include="icons\1\green\car225.png" />
+    <Content Include="icons\1\green\car225_270.png" />
+    <Content Include="icons\1\green\car270.png" />
+    <Content Include="icons\1\green\car270_315.png" />
+    <Content Include="icons\1\green\car315.png" />
+    <Content Include="icons\1\green\car315_350.png" />
+    <Content Include="icons\1\green\car45.png" />
+    <Content Include="icons\1\green\car45_90.png" />
+    <Content Include="icons\1\green\car90.png" />
+    <Content Include="icons\1\green\car90_135.png" />
+    <Content Include="icons\1\orange\car0.png" />
+    <Content Include="icons\1\orange\car0_45.png" />
+    <Content Include="icons\1\orange\car135.png" />
+    <Content Include="icons\1\orange\car135_180.png" />
+    <Content Include="icons\1\orange\car180.png" />
+    <Content Include="icons\1\orange\car180_225.png" />
+    <Content Include="icons\1\orange\car225.png" />
+    <Content Include="icons\1\orange\car225_270.png" />
+    <Content Include="icons\1\orange\car270.png" />
+    <Content Include="icons\1\orange\car270_315.png" />
+    <Content Include="icons\1\orange\car315.png" />
+    <Content Include="icons\1\orange\car315_350.png" />
+    <Content Include="icons\1\orange\car45.png" />
+    <Content Include="icons\1\orange\car45_90.png" />
+    <Content Include="icons\1\orange\car90.png" />
+    <Content Include="icons\1\orange\car90_135.png" />
+    <Content Include="icons\1\red\car0.png" />
+    <Content Include="icons\1\red\car0_45.png" />
+    <Content Include="icons\1\red\car135.png" />
+    <Content Include="icons\1\red\car135_180.png" />
+    <Content Include="icons\1\red\car180.png" />
+    <Content Include="icons\1\red\car180_225.png" />
+    <Content Include="icons\1\red\car225.png" />
+    <Content Include="icons\1\red\car225_270.png" />
+    <Content Include="icons\1\red\car270.png" />
+    <Content Include="icons\1\red\car270_315.png" />
+    <Content Include="icons\1\red\car315.png" />
+    <Content Include="icons\1\red\car315_350.png" />
+    <Content Include="icons\1\red\car45.png" />
+    <Content Include="icons\1\red\car45_90.png" />
+    <Content Include="icons\1\red\car90.png" />
+    <Content Include="icons\1\red\car90_135.png" />
+    <Content Include="icons\2.png" />
+    <Content Include="icons\2\green\car0.png" />
+    <Content Include="icons\2\green\car0_45.png" />
+    <Content Include="icons\2\green\car135.png" />
+    <Content Include="icons\2\green\car135_180.png" />
+    <Content Include="icons\2\green\car180.png" />
+    <Content Include="icons\2\green\car180_225.png" />
+    <Content Include="icons\2\green\car225.png" />
+    <Content Include="icons\2\green\car225_270.png" />
+    <Content Include="icons\2\green\car270.png" />
+    <Content Include="icons\2\green\car270_315.png" />
+    <Content Include="icons\2\green\car315.png" />
+    <Content Include="icons\2\green\car315_350.png" />
+    <Content Include="icons\2\green\car45.png" />
+    <Content Include="icons\2\green\car45_90.png" />
+    <Content Include="icons\2\green\car90.png" />
+    <Content Include="icons\2\green\car90_135.png" />
+    <Content Include="icons\2\orange\car0.png" />
+    <Content Include="icons\2\orange\car0_45.png" />
+    <Content Include="icons\2\orange\car135.png" />
+    <Content Include="icons\2\orange\car135_180.png" />
+    <Content Include="icons\2\orange\car180.png" />
+    <Content Include="icons\2\orange\car180_225.png" />
+    <Content Include="icons\2\orange\car225.png" />
+    <Content Include="icons\2\orange\car225_270.png" />
+    <Content Include="icons\2\orange\car270.png" />
+    <Content Include="icons\2\orange\car270_315.png" />
+    <Content Include="icons\2\orange\car315.png" />
+    <Content Include="icons\2\orange\car315_350.png" />
+    <Content Include="icons\2\orange\car45.png" />
+    <Content Include="icons\2\orange\car45_90.png" />
+    <Content Include="icons\2\orange\car90.png" />
+    <Content Include="icons\2\orange\car90_135.png" />
+    <Content Include="icons\2\red\car0.png" />
+    <Content Include="icons\2\red\car0_45.png" />
+    <Content Include="icons\2\red\car135.png" />
+    <Content Include="icons\2\red\car135_180.png" />
+    <Content Include="icons\2\red\car180.png" />
+    <Content Include="icons\2\red\car180_225.png" />
+    <Content Include="icons\2\red\car225.png" />
+    <Content Include="icons\2\red\car225_270.png" />
+    <Content Include="icons\2\red\car270.png" />
+    <Content Include="icons\2\red\car270_315.png" />
+    <Content Include="icons\2\red\car315.png" />
+    <Content Include="icons\2\red\car315_350.png" />
+    <Content Include="icons\2\red\car45.png" />
+    <Content Include="icons\2\red\car45_90.png" />
+    <Content Include="icons\2\red\car90.png" />
+    <Content Include="icons\2\red\car90_135.png" />
+    <Content Include="icons\3.png" />
+    <Content Include="icons\4\green\car0.png" />
+    <Content Include="icons\4\green\car0_45.png" />
+    <Content Include="icons\4\green\car135.png" />
+    <Content Include="icons\4\green\car135_180.png" />
+    <Content Include="icons\4\green\car180.png" />
+    <Content Include="icons\4\green\car180_225.png" />
+    <Content Include="icons\4\green\car225.png" />
+    <Content Include="icons\4\green\car225_270.png" />
+    <Content Include="icons\4\green\car270.png" />
+    <Content Include="icons\4\green\car270_315.png" />
+    <Content Include="icons\4\green\car315.png" />
+    <Content Include="icons\4\green\car315_350.png" />
+    <Content Include="icons\4\green\car45.png" />
+    <Content Include="icons\4\green\car45_90.png" />
+    <Content Include="icons\4\green\car90.png" />
+    <Content Include="icons\4\green\car90_135.png" />
+    <Content Include="icons\4\orange\car0.png" />
+    <Content Include="icons\4\orange\car0_45.png" />
+    <Content Include="icons\4\orange\car135.png" />
+    <Content Include="icons\4\orange\car135_180.png" />
+    <Content Include="icons\4\orange\car180.png" />
+    <Content Include="icons\4\orange\car180_225.png" />
+    <Content Include="icons\4\orange\car225.png" />
+    <Content Include="icons\4\orange\car225_270.png" />
+    <Content Include="icons\4\orange\car270.png" />
+    <Content Include="icons\4\orange\car270_315.png" />
+    <Content Include="icons\4\orange\car315.png" />
+    <Content Include="icons\4\orange\car315_350.png" />
+    <Content Include="icons\4\orange\car45.png" />
+    <Content Include="icons\4\orange\car45_90.png" />
+    <Content Include="icons\4\orange\car90.png" />
+    <Content Include="icons\4\orange\car90_135.png" />
+    <Content Include="icons\4\red\car0.png" />
+    <Content Include="icons\4\red\car0_45.png" />
+    <Content Include="icons\4\red\car135.png" />
+    <Content Include="icons\4\red\car135_180.png" />
+    <Content Include="icons\4\red\car180.png" />
+    <Content Include="icons\4\red\car180_225.png" />
+    <Content Include="icons\4\red\car225.png" />
+    <Content Include="icons\4\red\car225_270.png" />
+    <Content Include="icons\4\red\car270.png" />
+    <Content Include="icons\4\red\car270_315.png" />
+    <Content Include="icons\4\red\car315.png" />
+    <Content Include="icons\4\red\car315_350.png" />
+    <Content Include="icons\4\red\car45.png" />
+    <Content Include="icons\4\red\car45_90.png" />
+    <Content Include="icons\4\red\car90.png" />
+    <Content Include="icons\4\red\car90_135.png" />
+    <Content Include="icons\517216-web_red_dot_large - Copy.jpg" />
+    <Content Include="icons\5\green\car0.png" />
+    <Content Include="icons\5\green\car0_45.png" />
+    <Content Include="icons\5\green\car135.png" />
+    <Content Include="icons\5\green\car135_180.png" />
+    <Content Include="icons\5\green\car180.png" />
+    <Content Include="icons\5\green\car180_225.png" />
+    <Content Include="icons\5\green\car225.png" />
+    <Content Include="icons\5\green\car225_270.png" />
+    <Content Include="icons\5\green\car270.png" />
+    <Content Include="icons\5\green\car270_315.png" />
+    <Content Include="icons\5\green\car315.png" />
+    <Content Include="icons\5\green\car315_350.png" />
+    <Content Include="icons\5\green\car45.png" />
+    <Content Include="icons\5\green\car45_90.png" />
+    <Content Include="icons\5\green\car90.png" />
+    <Content Include="icons\5\green\car90_135.png" />
+    <Content Include="icons\5\orange\car0.png" />
+    <Content Include="icons\5\orange\car0_45.png" />
+    <Content Include="icons\5\orange\car135.png" />
+    <Content Include="icons\5\orange\car135_180.png" />
+    <Content Include="icons\5\orange\car180.png" />
+    <Content Include="icons\5\orange\car180_225.png" />
+    <Content Include="icons\5\orange\car225.png" />
+    <Content Include="icons\5\orange\car225_270.png" />
+    <Content Include="icons\5\orange\car270.png" />
+    <Content Include="icons\5\orange\car270_315.png" />
+    <Content Include="icons\5\orange\car315.png" />
+    <Content Include="icons\5\orange\car315_350.png" />
+    <Content Include="icons\5\orange\car45.png" />
+    <Content Include="icons\5\orange\car45_90.png" />
+    <Content Include="icons\5\orange\car90.png" />
+    <Content Include="icons\5\orange\car90_135.png" />
+    <Content Include="icons\5\red\car0.png" />
+    <Content Include="icons\5\red\car0_45.png" />
+    <Content Include="icons\5\red\car135.png" />
+    <Content Include="icons\5\red\car135_180.png" />
+    <Content Include="icons\5\red\car180.png" />
+    <Content Include="icons\5\red\car180_225.png" />
+    <Content Include="icons\5\red\car225.png" />
+    <Content Include="icons\5\red\car225_270.png" />
+    <Content Include="icons\5\red\car270.png" />
+    <Content Include="icons\5\red\car270_315.png" />
+    <Content Include="icons\5\red\car315.png" />
+    <Content Include="icons\5\red\car315_350.png" />
+    <Content Include="icons\5\red\car45.png" />
+    <Content Include="icons\5\red\car45_90.png" />
+    <Content Include="icons\5\red\car90.png" />
+    <Content Include="icons\5\red\car90_135.png" />
+    <Content Include="icons\alert.png" />
+    <Content Include="icons\bike\car0.jpg" />
+    <Content Include="icons\bike\car0_45.jpg" />
+    <Content Include="icons\bike\car135.jpg" />
+    <Content Include="icons\bike\car135_180.jpg" />
+    <Content Include="icons\bike\car180.jpg" />
+    <Content Include="icons\bike\car180_225.jpg" />
+    <Content Include="icons\bike\car225.jpg" />
+    <Content Include="icons\bike\car225_270.jpg" />
+    <Content Include="icons\bike\car270.jpg" />
+    <Content Include="icons\bike\car270_315.jpg" />
+    <Content Include="icons\bike\car315.jpg" />
+    <Content Include="icons\bike\car315_350.jpg" />
+    <Content Include="icons\bike\car45.jpg" />
+    <Content Include="icons\bike\car45_90.jpg" />
+    <Content Include="icons\bike\car90.jpg" />
+    <Content Include="icons\bike\car90_135.jpg" />
+    <Content Include="icons\car.png" />
+    <Content Include="icons\cara.png" />
+    <Content Include="icons\car\car0.png" />
+    <Content Include="icons\car\car0_45.png" />
+    <Content Include="icons\car\car135.png" />
+    <Content Include="icons\car\car135_180.png" />
+    <Content Include="icons\car\car180.png" />
+    <Content Include="icons\car\car180_225.png" />
+    <Content Include="icons\car\car225.png" />
+    <Content Include="icons\car\car225_270.png" />
+    <Content Include="icons\car\car270.png" />
+    <Content Include="icons\car\car270_315.png" />
+    <Content Include="icons\car\car315.png" />
+    <Content Include="icons\car\car315_350.png" />
+    <Content Include="icons\car\car45.png" />
+    <Content Include="icons\car\car45_90.png" />
+    <Content Include="icons\car\car90.png" />
+    <Content Include="icons\car\car90_135.png" />
+    <Content Include="icons\car_icon1 - Copy.png" />
+    <Content Include="icons\car_icon1.png" />
+    <Content Include="icons\car_icon2 - Copy.png" />
+    <Content Include="icons\car_icon2.png" />
+    <Content Include="icons\car_icon3.png" />
+    <Content Include="icons\car_icon3big.png" />
+    <Content Include="icons\car_icon4.png" />
+    <Content Include="icons\dashboard.png" />
+    <Content Include="icons\date.png" />
+    <Content Include="icons\icon.png" />
+    <Content Include="icons\icon1.png" />
+    <Content Include="icons\leftSlider.png" />
+    <Content Include="icons\livetrack.png" />
+    <Content Include="icons\personal.png" />
+    <Content Include="icons\personal1.png" />
+    <Content Include="icons\personal1blue.png" />
+    <Content Include="icons\rain.png" />
+    <Content Include="icons\random\car_icon3big.png" />
+    <Content Include="icons\random\tower.png" />
+    <Content Include="icons\recycle.png" />
+    <Content Include="icons\RedCar - Copy.png" />
+    <Content Include="icons\RedCar.png" />
+    <Content Include="icons\red_dot.png" />
+    <Content Include="icons\replay.png" />
+    <Content Include="icons\reports.png" />
+    <Content Include="icons\tower.png" />
+    <Content Include="icons\vehiclelist.png" />
+    <Content Include="icons\YellowCar - Copy.png" />
+    <Content Include="icons\YellowCar.png" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\ajax-loader %281%29.gif" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\balloon_bottom.png" />
+    <Content Include="images\balloon_bottomLeft.png" />
+    <Content Include="images\balloon_bottomRight.png" />
+    <Content Include="images\balloon_left.png" />
+    <Content Include="images\balloon_right.png" />
+    <Content Include="images\balloon_top.png" />
+    <Content Include="images\balloon_topLeft.png" />
+    <Content Include="images\balloon_topRight.png" />
+    <Content Include="images\block_center_repeat_bg.png" />
+    <Content Include="images\block_Content_bottum_bg.jpg" />
+    <Content Include="images\block_NewsAndEvents_BG.jpg" />
+    <Content Include="images\block_right_bg.png" />
+    <Content Include="images\block_SearchContact_bg.jpg" />
+    <Content Include="images\block_SearchLeads.jpg" />
+    <Content Include="images\blue-delete-button_617310.jpg" />
+    <Content Include="images\body_bg.jpg" />
+    <Content Include="images\button_bg.jpg" />
+    <Content Include="images\button_edit_grey.gif" />
+    <Content Include="images\calendar_icon.jpg" />
+    <Content Include="images\center_footer_bg.jpg" />
+    <Content Include="images\Dashboard21.jpg" />
+    <Content Include="images\Dashboard21_50.jpg" />
+    <Content Include="images\Dashboard21_55.jpg" />
+    <Content Include="images\Dashboard21_56.jpg" />
+    <Content Include="images\delete_One_icon.jpg" />
+    <Content Include="images\dnc-5wya763i.png" />
+    <Content Include="images\dnc-hr044876.png" />
+    <Content Include="images\dnc-v0741nx8.png" />
+    <Content Include="images\edit-icon2.png" />
+    <Content Include="images\edit_one_icon.jpg" />
+    <Content Include="images\FooterBG.png" />
+    <Content Include="images\footer_bg.jpg" />
+    <Content Include="images\fuel.gif" />
+    <Content Include="images\greendot.jpg" />
+    <Content Include="images\grid_row_bg.jpg" />
+    <Content Include="images\Header.png" />
+    <Content Include="images\headerBG.png" />
+    <Content Include="images\HeadersFooter.png" />
+    <Content Include="images\HeadersFooter1.png" />
+    <Content Include="images\HeadersFooter2.png" />
+    <Content Include="images\HeadersFooter3.png" />
+    <Content Include="images\Icondelete.jpg" />
+    <Content Include="images\Icondelete.png" />
+    <Content Include="images\Iconedit.png" />
+    <Content Include="images\icon_temp.png" />
+    <Content Include="images\image_311127.gif" />
+    <Content Include="images\lead_block_left_bg.png" />
+    <Content Include="images\leftedge.gif" />
+    <Content Include="images\left_footer_bg.jpg" />
+    <Content Include="images\loadinfo.gif" />
+    <Content Include="images\login-box-backg.png" />
+    <Content Include="images\login-btn.png" />
+    <Content Include="images\login.png" />
+    <Content Include="images\loginBG.png" />
+    <Content Include="images\loginbtn.png" />
+    <Content Include="images\loginCenter.jpg" />
+    <Content Include="images\loginCenter.png" />
+    <Content Include="images\loginCenter1.png" />
+    <Content Include="images\login_bg.jpg" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\massUpdate_block_left_bg.png" />
+    <Content Include="images\menuinner_BG.jpg" />
+    <Content Include="images\menuinner_L.jpg" />
+    <Content Include="images\menuinner_R.jpg" />
+    <Content Include="images\menu_BG.jpg" />
+    <Content Include="images\menu_L.jpg" />
+    <Content Include="images\menu_R.jpg" />
+    <Content Include="images\nav_bg_m.jpg" />
+    <Content Include="images\nav_L_m.jpg" />
+    <Content Include="images\nav_r_m.jpg" />
+    <Content Include="images\news_block_left_bg.png" />
+    <Content Include="images\reddot.jpg" />
+    <Content Include="images\refresh.png" />
+    <Content Include="images\refresh2.png" />
+    <Content Include="images\remove_24.png" />
+    <Content Include="images\rightedge.gif" />
+    <Content Include="images\right_footer_bg.jpg" />
+    <Content Include="images\sandserp_logo.png" />
+    <Content Include="images\search_block_left_bg.png" />
+    <Content Include="images\search_button.png" />
+    <Content Include="images\slide-left.gif" />
+    <Content Include="images\slide-left2.gif" />
+    <Content Include="images\slide-right.gif" />
+    <Content Include="images\slide-right2.gif" />
+    <Content Include="login-box.css" />
+    <Content Include="masterSheet.css" />
+    <Content Include="multiReport.aspx" />
+    <Content Include="Multitrack.aspx" />
+    <Content Include="Organisation.aspx" />
+    <Content Include="ptdashboard.aspx" />
+    <Content Include="replayOnEarth.aspx" />
+    <Content Include="replayOnMap.aspx" />
+    <Content Include="Reports.aspx" />
+    <Content Include="Scripts\dashbrd.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\multiTrack.js" />
+    <Content Include="Scripts\repMap.js" />
+    <Content Include="Styles\carriers.css" />
+    <Content Include="Styles\company.css" />
+    <Content Include="Styles\images\delete.jpg" />
+    <Content Include="Styles\images\edit.jpg" />
+    <Content Include="Styles\images\h10.jpg" />
+    <Content Include="Styles\images\h11.jpg" />
+    <Content Include="Styles\images\h12.jpg" />
+    <Content Include="Styles\images\h20.jpg" />
+    <Content Include="Styles\images\h22.jpg" />
+    <Content Include="Styles\images\h30.jpg" />
+    <Content Include="Styles\images\h31.jpg" />
+    <Content Include="Styles\images\h32.jpg" />
+    <Content Include="Styles\images\item1.png" />
+    <Content Include="Styles\images\m1.jpg" />
+    <Content Include="Styles\images\m2.jpg" />
+    <Content Include="Styles\images\m3.jpg" />
+    <Content Include="Styles\images\m4.jpg" />
+    <Content Include="Styles\images\m5.jpg" />
+    <Content Include="Styles\images\m6.jpg" />
+    <Content Include="Styles\images\submenu-bottom.png" />
+    <Content Include="Styles\images\submenu-top.png" />
+    <Content Include="Styles\images\t1.jpg" />
+    <Content Include="Styles\images\t2.jpg" />
+    <Content Include="Styles\login-box.css" />
+    <Content Include="Styles\menu.css" />
+    <Content Include="Styles\org.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\skin.css" />
+    <Content Include="Styles\StyleSheet.css" />
+    <Content Include="UploadedImages\2012-chevy-volt-Chevrolet-electric-car-top-view.png" />
+    <Content Include="UploadedImages\car0.png" />
+    <Content Include="UploadedImages\sands_red.png" />
+    <Content Include="userEditNormal.aspx" />
+    <Content Include="userMgmt.aspx" />
+    <Content Include="userRegAdd.aspx" />
+    <Content Include="users.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API.asmx.cs">
+      <DependentUpon>API.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Carriers.aspx.cs">
+      <DependentUpon>Carriers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers.aspx.designer.cs">
+      <DependentUpon>Carriers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company.aspx.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company.aspx.designer.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="companyAdmin.Master.cs">
+      <DependentUpon>companyAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="companyAdmin.Master.designer.cs">
+      <DependentUpon>companyAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Comparison.aspx.cs">
+      <DependentUpon>Comparison.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comparison.aspx.designer.cs">
+      <DependentUpon>Comparison.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard.aspx.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoard.aspx.designer.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportExcel.aspx.cs">
+      <DependentUpon>ExportExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExportExcel.aspx.designer.cs">
+      <DependentUpon>ExportExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportPdf.aspx.cs">
+      <DependentUpon>ExportPdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExportPdf.aspx.designer.cs">
+      <DependentUpon>ExportPdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportToExcelMultiple.aspx.cs">
+      <DependentUpon>ExportToExcelMultiple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExportToExcelMultiple.aspx.designer.cs">
+      <DependentUpon>ExportToExcelMultiple.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportToPDFMultiple.aspx.cs">
+      <DependentUpon>ExportToPDFMultiple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExportToPDFMultiple.aspx.designer.cs">
+      <DependentUpon>ExportToPDFMultiple.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCM.cs" />
+    <Compile Include="GDashboard.aspx.cs">
+      <DependentUpon>GDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GDashboard.aspx.designer.cs">
+      <DependentUpon>GDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Geofencing.aspx.cs">
+      <DependentUpon>Geofencing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Geofencing.aspx.designer.cs">
+      <DependentUpon>Geofencing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="multiReport.aspx.cs">
+      <DependentUpon>multiReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="multiReport.aspx.designer.cs">
+      <DependentUpon>multiReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Multitrack.aspx.cs">
+      <DependentUpon>Multitrack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Multitrack.aspx.designer.cs">
+      <DependentUpon>Multitrack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NormalUser.Master.cs">
+      <DependentUpon>NormalUser.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NormalUser.Master.designer.cs">
+      <DependentUpon>NormalUser.Master</DependentUpon>
+    </Compile>
+    <Compile Include="orgAdmin.Master.cs">
+      <DependentUpon>orgAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orgAdmin.Master.designer.cs">
+      <DependentUpon>orgAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Organisation.aspx.cs">
+      <DependentUpon>Organisation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Organisation.aspx.designer.cs">
+      <DependentUpon>Organisation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ptdashboard.aspx.cs">
+      <DependentUpon>ptdashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ptdashboard.aspx.designer.cs">
+      <DependentUpon>ptdashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="replayOnEarth.aspx.cs">
+      <DependentUpon>replayOnEarth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="replayOnEarth.aspx.designer.cs">
+      <DependentUpon>replayOnEarth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="replayOnMap.aspx.cs">
+      <DependentUpon>replayOnMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="replayOnMap.aspx.designer.cs">
+      <DependentUpon>replayOnMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.master.cs">
+      <DependentUpon>Site.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.master.designer.cs">
+      <DependentUpon>Site.master</DependentUpon>
+    </Compile>
+    <Compile Include="userEditNormal.aspx.cs">
+      <DependentUpon>userEditNormal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userEditNormal.aspx.designer.cs">
+      <DependentUpon>userEditNormal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userMgmt.aspx.cs">
+      <DependentUpon>userMgmt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userMgmt.aspx.designer.cs">
+      <DependentUpon>userMgmt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userRegAdd.aspx.cs">
+      <DependentUpon>userRegAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userRegAdd.aspx.designer.cs">
+      <DependentUpon>userRegAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="KML\" />
+    <Folder Include="photos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="companyAdmin.Master" />
+    <None Include="icons\20121009094650433_easyicon_cn_32.png.exclude" />
+    <None Include="icons\Thumbs.db" />
+    <Content Include="MasterPage.master" />
+    <Content Include="orgAdmin.Master" />
+    <Content Include="NormalUser.Master" />
+    <None Include="images\Thumbs.db" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10427</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

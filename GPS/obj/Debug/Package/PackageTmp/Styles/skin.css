@@ -1,0 +1,856 @@
+#form
+{
+    overflow:visible; 
+}
+
+body {
+	padding:0;
+	margin:0;
+	background-image:url('../Images/body_bg.jpg');
+	background-position:top left;
+	background-repeat:repeat-x;
+	background-color:#fff;
+	font-family:Verdana Arial, helvetica, sanserif;
+	font-weight:normal;
+	font-size:11px;
+	color:#333;
+	 
+}
+
+A:link {text-decoration: none; color:#666;}
+A:visited {text-decoration: none; color:#666;}
+A:active {text-decoration: none; color:#666;}
+A:hover {text-decoration: underline}
+
+.CF{ clear:both;}
+.FL{ float:left;}
+.FR{ float:right;}
+.menubg {
+	background-image:url('../Images/menu_BG.jpg');
+	background-position:top left;
+	background-repeat:repeat-x;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+}
+.menuinnerbg
+{
+    background-image: url('../Images/menuinner_BG.jpg');
+    background-position: left top;
+    background-repeat: repeat-x;
+}
+.loginbg {
+	background-image:url('../Images/login_bg.jpg');
+	background-position:top left;
+	background-repeat:repeat-x;
+}
+.loginboxbg {
+	background-image:url('../Images/loginCenter.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+}
+#loginbox {
+	width:248px;
+	padding:0;
+	margin:0 auto;
+	height:auto;
+}
+#loginbox .LoginTitle {
+	color:#000d3d;
+	text-indent:hanging;
+	font-size:13px;
+	font-weight:bold;
+	float:left;
+}
+#loginbox .LoginTitlelarge {
+	color:#000d3d;
+	text-indent:hanging;
+	font-size:17px;
+	font-weight:bold;
+	float:left;
+	margin:15px 0 0 0;
+	text-transform:uppercase;
+}
+#loginbox input{ margin:5px 0; padding:3px; width:238px;}
+
+
+/* left side panel */
+
+.blockHeader
+{
+	font-family:Cambria;
+	font-size:15px;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+.blockContent
+{
+	background-color: #4F576A;
+	color: #FFFFFF;
+	padding: 5px 5px 5px 10px;
+}
+input
+{
+    font-size: 13px;
+    border: 1pt solid gray;
+    color: #333333;
+	margin-bottom: 0px;
+    }
+.checkbox input
+{
+    font-size: 13px;
+    width: 20px;
+    border-width:0;
+    vertical-align: top;
+}
+.chkbox
+{
+ COLOR: black;
+ border-style: none;
+ vertical-align:middle;
+
+}
+textarea
+{
+    font-size: 14px;
+    border: 1pt solid gray;
+    color: #5F5F5F;
+}
+select
+{
+    font-size: 13px;
+    border: 1pt solid gray;
+    color: #5F5F5F;
+    }
+
+/*
+a: active{text-decoration:underline;}
+a: visited{color:Red;}
+a: hover{color:#66ccff; text-decoration:none;}
+a: selected{color:White;}
+*/
+.searchButton
+{
+	background: transparent url('../images/search_button.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-style:none;
+	height:30px;
+	width:81px;
+	margin-top:5px;
+	cursor:pointer;
+}
+
+.calenderButton
+{
+	background: transparent url('../images/calendar_icon.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-style:none;
+	height:17px;
+	width:20px;
+    float:left;
+    margin-left:5px;
+	cursor:pointer;
+	
+}
+
+
+
+.newsAndEventsBlcokBG
+{
+	background-image: url('../Images/block_newsAndEvents_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:34px;
+	width:265px;
+	float:left;
+}
+/**/
+.searchBlockLeftBG
+{
+	background-image: url('../Images/search_block_left_bg.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	height:32px;
+	width:30px;
+	float:left;
+	margin-left:-1px;
+	
+}
+
+.searchBlockLeftBG1
+{
+	background-image: url('../Images/account.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	height:34px;
+	width:34px;
+	float:left;
+	margin-left:-1px;
+	
+	border:0px;
+}
+.blockCenterBG
+{
+    background-image: url('../Images/block_center_repeat_bg.png');
+	background-repeat: repeat-x;
+	background-position: center top;
+	height:25px;
+	
+	float:left;
+	color:White;
+	font-family:Tahoma;
+	font-size:13px;
+	font-weight:bold;
+	padding-top:7px;
+}
+.blockRightBG
+{
+     background-image: url('../Images/block_right_bg.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	height:32px;
+	width:20px;
+	float:left;
+}
+.blockContentBottumBG
+{
+	background-image: url('../Images/block_Content_bottum_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 13px;
+	width: 265px;
+	text-align:center;
+	margin-left:-1px;
+}
+.newsAndEventsContentHeadline
+{
+	color:#B5DDE5;
+	font-family:Calibri;	
+	background-color: #4F576A;
+	font-size:17px;
+	padding: 5px 5px 5px 10px;
+}
+
+.leftFooterBG
+{
+	background-image: url('../Images/left_footer_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: left center;
+	height:39px;
+}
+
+.rightFooterBG
+{
+	background-image: url('../Images/right_footer_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: right center;
+	height:39px;
+}
+.centerFooterBG
+{
+	background-image: url('../Images/center_footer_bg.jpg');
+	background-repeat: repeat-x;
+	background-position: center center;
+	height:39px;
+}
+
+/* Grid CSS  */
+.grid_view
+{
+    border-style: none solid solid solid;
+    border-color: #4f576a;
+    border-width: 1pt;
+    text-align: left;
+    min-width: 99%;
+    border-radius: 5px 10px 5px 10px / 10px 5px 10px 5px;
+}
+.grid_view th
+{
+    text-align: left;
+    font-size: 12px;
+    font-family:Verdana;
+    padding: 4px 10px 4px 10px;
+    color: #000000;
+    background-color: #DDDDDD;
+    border-style: none none none none;
+    border-color: #4f576a;
+    border-width: 1pt;
+    position:relative ;   
+top:expression(this.offsetParent.scrollTop);  
+z-index: 10; 
+}
+.grid_view td
+{
+     border-style: none none none none;
+     padding-left:20px;
+}
+.grid_view checkbox
+{
+   border-style:none;
+}
+.grid_view tr.normal
+{
+	background-position: center center;
+	padding-right: 5px;
+	padding-left: 5px;
+	text-align: left;
+	height: 35px;
+	border-style: none none none none;
+	border-color: Silver;
+	border-width: 1pt;
+	background-image: url('../Images/grid_row_bg.jpg');
+	background-repeat: repeat-x;
+}
+.grid_view tr.alternate
+{
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: left;
+
+    height: 35px;
+    border-style: none none none none;
+    border-color: Silver;
+    border-width: 1pt;
+    	background-color: #dddddd;
+}
+.grid_view tr.alternate:hover
+{
+     background-color: #cdedf6;     
+}
+
+.grid_view tr.alternate:hover,a:hover
+{
+     background-color: #cdedf6;     
+}
+
+
+/* rounded corner css*/
+
+div.rounded-box {
+    width: 9em;
+    background-color: #E6E6E6;
+    margin: 3px;
+}
+div.top-left-corner, div.bottom-left-corner,
+div.top-right-corner, div.bottom-right-corner
+{position:absolute; width:20px; height:20px;
+background-color:#FFF; overflow:hidden;}
+div.top-left-inside, div.bottom-left-inside,
+div.top-right-inside, div.bottom-right-inside
+{position:relative; font-size:150px; font-family:arial;
+color:#E6E6E6; line-height: 40px;}
+div.top-left-corner { top:0px; left:0px; }
+div.bottom-left-corner {bottom:0px; left:0px;}
+div.top-right-corner {top:0px; right:0px;}
+div.bottom-right-corner {bottom: 0px; right:0px;}
+div.top-left-inside {left:-8px;}
+div.bottom-left-inside {left:-8px; top:-17px;}
+div.top-right-inside {left:-25px;}
+div.bottom-right-inside {left:-25px; top:-17px;}
+div.box-contents {
+	position: relative; padding: 8px; color:#000;
+}
+
+
+/* Calendar CSS  */
+
+
+
+.cal_Theme1 .ajax__calendar_container   {
+    background-color: #e2e2e2; 
+    border:solid 1px #cccccc;
+}
+
+.cal_Theme1 .ajax__calendar_header  {
+    background-color: #ffffff; 
+    margin-bottom: 4px;
+}
+
+.cal_Theme1 .ajax__calendar_title,
+.cal_Theme1 .ajax__calendar_next,
+.cal_Theme1 .ajax__calendar_prev    {
+    color: #004080; 
+    padding-top: 3px;
+}
+
+.cal_Theme1 .ajax__calendar_body    {
+    background-color: #e9e9e9; 
+    border: solid 1px #cccccc;
+}
+
+.cal_Theme1 .ajax__calendar_dayname {
+    text-align:center; 
+    font-weight:bold; 
+    margin-bottom: 4px; 
+    margin-top: 2px;
+}
+
+.cal_Theme1 .ajax__calendar_day {
+    text-align:center;
+}
+
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_day,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_month,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_year,
+.cal_Theme1 .ajax__calendar_active  {
+    color: #004080; 
+    font-weight: bold; 
+    background-color: #ffffff;
+}
+
+.cal_Theme1 .ajax__calendar_today   {
+    font-weight:bold;
+    
+}
+
+.cal_Theme1 .ajax__calendar_other,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_today,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_title {
+    color: #bbbbbb;
+}
+
+.validator
+{
+    color:Red;
+    }
+    
+
+/* Grid Smart Tag */
+
+.refresh
+{
+    margin-top:-5px;
+    background:transparent url('../Images/refresh.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height:28px;
+    width:22px;
+    border-style:none;
+}
+    
+ .delete
+ {
+      margin-top:0px;
+    background:url('../Images/remove_24.png') no-repeat center;
+    border-style:none;
+     }
+     
+ .edit
+ { margin:-5px 3px 0 3px;
+    background:transparent url('../Images/edit-icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height:28px;
+    width:22px;
+    border-style:none;
+     }
+     
+  .deleteOneRecord
+  {
+      background:transparent url('../Images/delete_one_icon.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height:15px;
+    width:16px;
+    border-style:none;
+    margin-top:2px;
+   }
+     .editOneRecord
+  {
+      background:transparent url('../Images/edit_one_icon.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height:17px;
+    width:16px;
+    border-style:none;
+   }
+   
+   
+   /* view left panel */
+   
+   .viewHeading
+{
+   
+    background-color: #F6F6F6;
+}
+  
+  
+ .viewTable
+{
+    border: 1px solid #DDDDDD;
+    
+     text-align:right;
+} 
+.viewTable td
+{
+    border-bottom: 1px solid #DDDDDD;
+    height:20px;
+   
+} 
+
+
+/* Button css*/
+
+.button {
+    float:left;
+    height:inherit;
+    font:76%/150% "Lucida Grande", Geneva, 
+    Verdana, Arial, Helvetica, sans-serif;
+    width:10em;
+    text-align:center;
+    white-space:nowrap;
+    color: #eee;
+    background-color:#1e5184;
+    font-size:1em;
+    font-weight:bolder;
+    text-decoration: none;
+    border-bottom:0.1em solid #555;
+    border-right:0.1em solid #555;
+    border-top:0.1em solid #ccc;
+    border-left:0.1em solid #ccc;
+    margin: 0.2em;
+    padding:0.2em;
+    display:block;
+}
+
+.Button1
+        {
+        border:groove inset 1px #000000;
+        background:#84B0DC;
+        filter: progid:DXImageTransform.Microsoft.Gradient
+
+(startColorstr='#84B0DC',endColorstr='#ffffff', gradientType='0')
+
+progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='#8b9b99', 
+
+Positive='true');
+        
+        color:black;
+        font-family:Verdana Arial;
+        font-size: 8pt;
+        font-weight:bold;
+
+       }
+
+.GVHeight
+{
+    overflow: scroll;
+    height:100px;
+}
+.calenderButton
+{
+	background: transparent url('../images/calendar_icon.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-style:none;
+	height:17px;
+	width:20px;
+    float:left;
+    margin-left:5px;
+	cursor:pointer;
+	
+}
+
+
+/**
+ *********************************************
+ * Prototype of styles for horizontal CSS-menu
+ * @data 25.01.2010
+ *********************************************
+ * (X)HTML-scheme:
+ *  <div id="menu">
+ *      <ul class="menu">
+ *          <li><a href="#" class="parent"><span>level 1</span></a>
+ *              <div><ul>
+ *                  <li><a href="#" class="parent"><span>level 2</span></a>
+ *                      <div><ul><li><a href="#"><span>level 
+
+3</span></a></li></ul></div>
+ *                  </li>
+ *              </ul></div>
+ *          </li>
+ *          <li class="last"><a href="#"><span>level 1</span></a></li>
+ *      </ul>
+ *  </div>
+ *********************************************
+ */
+/** Selectors **/
+
+/* Reset */
+#menu * {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;text-transform:uppercase;
+  z-index:999;
+  float:left;
+}
+div#menu {
+position:relative;  z-index:999;}
+#menu ul.menu {
+  white-space: nowrap;text-transform:uppercase;
+}
+
+/* Geometrical arrangement */
+#menu ul.menu li {
+  display: inline-block;
+  height: 46px;
+  position: relative;text-transform:uppercase;
+}
+
+#menu ul.menu li div {
+  position: absolute;
+  top: 46px;
+  left: 0px;text-transform:uppercase;
+}
+
+#menu ul.menu li div div {
+  position: absolute;
+  top: -6px;
+  left: 188px;text-transform:uppercase;
+}
+
+#menu ul.menu li div .subm{ border:1px solid red;}
+/* Escaping style for lower levels */
+#menu ul.menu li div ul li {
+
+  
+  display: block;
+    float: none;
+    height: auto;
+    text-transform: uppercase;
+    width: auto;
+  
+}
+
+/** Graphics **/
+
+.nobg {
+  background: transparent;
+  display: inline-block;text-transform:uppercase;
+}
+
+/* Horizontal sliding doors */
+#menu ul.menu li a {
+  padding-left: 14px;
+  background-image: url("images/item1.png");
+  background-color:transparent !important;
+  background-repeat: no-repeat;
+  background-position: left -1000px;
+  display: inline-block;
+  margin: 0px 2px;text-transform:uppercase;color:#fff;
+}
+
+#menu ul.menu li a span {
+  padding-right: 12px;
+  padding-left: 0px;
+  background-image: url("images/item1.png");
+  background-repeat: no-repeat;background-color:transparent !important;
+  background-position: right -1000px;
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  cursor: pointer;text-transform:uppercase;
+}
+
+
+#menu ul.menu li:hover a {
+  background-position: left -88px;text-transform:uppercase;
+}
+
+#menu ul.menu li:hover a span {
+  background-position: right -132px;text-transform:uppercase;
+}
+
+#menu ul.menu li.active a {
+
+  background-position: left 0px;text-transform:uppercase;
+}
+
+#menu ul.menu li.active a span {
+		color: #232323;text-transform:uppercase;
+  background-position: right -44px;
+}
+
+/* Escape Horizontal doors */
+#menu ul.menu li div ul li a {
+  display: block;
+  padding: 0px;
+  margin: 0px; font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: none;text-transform:uppercase; color:#333;
+}
+
+#menu ul.menu li div ul li a span {
+  display: block;
+  padding: 0px;
+  background: none;
+  height: auto;
+  width: 165px;
+  line-height: 34px; font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 7px 0 7px 9px;
+  white-space: normal;  text-transform:uppercase;
+}
+
+/* Vertical sliding doors */
+#menu ul.menu li div { 
+  width: 200px;
+  padding-top: 6px;
+  background-image: url("images/submenu-top.png");
+  background-repeat: no-repeat;
+  background-position: 0px top;text-transform:uppercase;background-color:none;
+
+}
+
+#menu ul.menu li div ul { 
+  padding: 6px 6px 9px 6px;
+  padding-top: 0;
+  background-image: url("images/submenu-bottom.png");
+  background-repeat: no-repeat;
+  background-position: 0px bottom;text-transform:uppercase;
+ 
+}
+
+/* Hover Effect on Submenus */
+#menu ul.menu ul li:hover
+{
+
+}
+#menu ul.menu li.active ul li a span {
+	color: #434343;
+	width: 165px;text-transform:uppercase;}
+#menu ul.menu li.active ul li a span:hover {
+	color:#2f95d7;text-transform:uppercase;}
+	
+#menu ul.menu ul li a span:hover
+{
+	color:#2f95d7; text-transform:uppercase;
+}
+
+
+/* Main header line */
+#menu {
+  height: 48px;
+background-image: url("images/navbg.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+/* Text shadow */
+#menu span
+{
+  color: #ffffff;text-transform:uppercase;
+}
+
+#menu li:hover>a>span 
+{
+  color: #232323;text-transform:uppercase;
+}
+
+/* Fonts */
+#menu ul.menu li a span
+{ 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;text-transform:uppercase;
+}
+
+#menu ul.menu li div ul li a span
+{ color:#5E5E5E;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;text-transform:uppercase;line-height:18px;
+}
+
+/* Lines between li */
+#menu ul.menu li div ul
+{
+  padding-bottom: 8px;
+}
+
+#menu ul.menu li div ul li:first-child
+{
+  border-top-width: 0px;
+}
+
+
+/* Menu logic */
+#menu li>div { visibility: hidden; }
+#menu li:hover>div { visibility: visible; }
+/* */
+
+/* Hover Effect on Submenus */
+#menu ul.menu ul li:hover
+{
+  background-color: #fff;
+}
+
+/* Lines between li */
+#menu ul.menu li div ul li
+{
+  background-image:url(images/hr.gif);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+#menu ul.menu ul a.parent {
+  background: url(images/arrow.gif) no-repeat right center;
+  margin-right: -1px;
+}
+
+
+/* ie7 */
+#menu ul.menu li {
+  *zoom: 1;
+  *display: inline;
+}
+
+#menu ul.menu li a {
+  *zoom: 1;
+  *display: inline;
+}
+
+#menu ul.menu li a span {
+  *zoom: 1;
+  *display: inline;
+}
+
+/* IE6 */
+#menu ul.menu li a {
+  _background-image: url("images/item.gif");
+}
+
+#menu ul.menu li a span {
+  _background-image: url("images/item.gif");
+}
+
+#menu ul.menu li div { 
+  _background-image: url("images/submenu-top.gif");
+}
+
+#menu ul.menu li div ul { 
+  _background-image: url("images/submenu-bottom.gif");
+}
+
+#menu ul.menu li a:hover {
+  _background-position: left -54px;
+}
+
+#menu ul.menu li a:hover span {
+  _background-position: right -81px;
+  _color: #FFFFFF;
+}
+#menu ul.menu li li a:hover span {
+  _color:#dd9726; 
+}
+
+/* Menu logic for IE6 */
+#menu div { _display: none; }
+#menu div li:hover div { _visibility: visible;_display: block; }
+#menu div li:hover li:hover div { _display: block; }
+#menu div li:hover li:hover li:hover div { _display: block; }
+/* */

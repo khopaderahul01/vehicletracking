@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="SiteMaster" Codebehind="Site.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+  <title>MTS Login</title>
+   <%-- <link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui.min.js" type="text/javascript"></script>--%>
+    <asp:ContentPlaceHolder ID="headerdata" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   <form id="form1" runat="server">
+    <div class="container">
+        <div id="mHead" style="Height:100px"> &nbsp;
+            <%--<img src="images/logo.jpg"   alt="logo" style="float: left; padding-left: 33px; padding-top: 11px;
+                margin-bottom: 2px;" />--%>
+        </div>
+       
+        <div>
+            <asp:ContentPlaceHolder ID="contentdata" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+<div style="text-align:center; padding-top:100px; color: #BAB4B4; font-family:Arial; font-size:12px;">© Copyright All Rights Reserved 2017</div>
+    </form> 
+</body>
+</html>
