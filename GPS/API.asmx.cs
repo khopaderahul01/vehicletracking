@@ -17,7 +17,7 @@ namespace GPS
     /// <summary>
     /// Summary description for API
     /// </summary>
-    [WebService(Namespace = "http://opulentinfotech.com/")]
+    [WebService(Namespace = "http://.com/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
